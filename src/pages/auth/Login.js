@@ -1,31 +1,44 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Input from "../../components/ui/input";
 import Button from "../../components/ui/button";
 import { MdLockOutline, MdOutlineMail } from "react-icons/md";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
+import { login } from "../../store/slices/userSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const Login = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
     formState: { errors }
-  } = useForm();    
+  } = useForm();
 
-  const onSubmit = (data) => { 
+  const onSubmit = (data) => {
     
-    toast('Submitted')
-    console.log(data); 
+    const mockUser = {
+      id: 1,
+      name: 'Muhammad Zeeshan',
+      email: 'muhammadzeshan@gmail.com',
+      role: 'user',
+    };
+    const mockToken = 'mocked-jwt-token';
+    dispatch(login({ user: mockUser, token: mockToken }));
+    navigate('/')
+    console.log(data);
   };
 
   return (
     <div className="bg-black p-10 rounded-lg md:min-w-[786px]">
-      <h3 className="font-[300]">Log In</h3>
+      <h3 className="h3  font-[300]">Log In</h3>
       <p className="b4 text-[#d5d5d5d5]">Enter your credentials to continue to your account.</p>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5 mt-10">
         <Input
           Icon={MdOutlineMail}
-          error={!!errors.email} 
+          error={!!errors.email}
           placeholder="Enter your Email"
           {...register("email", { required: "Email is required", pattern: { value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i, message: "Invalid email address" } })}
         />
@@ -33,7 +46,7 @@ const Login = () => {
 
         <div className="flex flex-col gap-3">
           <Input
-            error={!!errors.password} 
+            error={!!errors.password}
             Icon={MdLockOutline}
             placeholder="Enter your account password"
             type="password"

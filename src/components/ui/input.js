@@ -1,4 +1,4 @@
-const Input = ({  Icon,error, ...props }) => {
+const Input = ({ className='' ,Icon,error, ...props }) => {
     return (
       <div className="relative flex items-center w-full">
         {Icon && (
@@ -8,7 +8,7 @@ const Input = ({  Icon,error, ...props }) => {
         )}
         <input
           {...props}
-          className={`${Icon && 'pl-12'} ${error && 'ring-red-600'} transition-all  duration-300 p-4 outline-none focus:ring-2 ring-[#333333] rounded-xl bg-[#090909] border border-[#333333] text-[#9D9D9D] placeholder:text-[#9D9D9D] text-[18px] w-full`}
+          className={`${Icon && 'pl-12'} ${error && 'ring-red-600'} ${className} transition-all  duration-300 p-4 h9 outline-none focus:ring-2 ring-[#333333] rounded-xl bg-[#090909] border border-[#333333] text-white  placeholder:text-primary-100  text-[18px] w-full`}
           
         />
       </div>

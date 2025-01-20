@@ -5,12 +5,12 @@ import { Outlet } from 'react-router-dom'
 
 const PublicLayout = () => {
     return (
-        <div className='' >
-            <main>dsadsa
-                <Header />
-                    <Outlet/>
-                <Footer />
+        <div className='h-screen' >
+            <Header />
+            <main >
+                <Outlet />
             </main>
+            <Footer />
         </div>
     )
 }

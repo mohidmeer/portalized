@@ -17,10 +17,9 @@ const ForgotPassword = () => {
 
   return (
     <div className="bg-black p-10 rounded-lg md:min-w-[786px]">
-      <h3 className="font-[300]">Forgot your Password</h3>
+      <h3 className="font-[300] h3">Forgot your Password</h3>
       <p className="b4 text-[#d5d5d5d5]">Don't worry, we will help you reset your password.</p>
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5 mt-10">
-        {/* Email Input */}
         <Input
           Icon={MdOutlineMail}
           placeholder="Enter your Email"
