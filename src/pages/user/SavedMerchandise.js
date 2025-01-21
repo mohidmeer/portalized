@@ -20,9 +20,9 @@ const SavedMerchandise = () => {
   return (
     <div className='flex flex-col gap-y-[100px]' >
 
-            <section className="max-w-7xl mx-auto w-full mt-10">
+            <section className="max-w-7xl mx-auto w-full mt-10 px-2 md:px-0 ">
                 <h5 className="h5 ml-2">Saved Merchandise</h5>
-                <div className='grid grid-cols-3 gap-8 mt-10'>
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10'>
                     {merchandise.map((product) => (
                        <ProductCard key={product.id} name={product.name} price={product.price} description={product.description} owner={product.owner} isLiked={true} action={true} />
                     ))}

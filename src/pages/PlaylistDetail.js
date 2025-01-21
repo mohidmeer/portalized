@@ -75,8 +75,6 @@ const PlaylistDetail = () => {
         fetchData();
     }, [slug]);
 
-
-
     
     if (!video) return <p>Loading...</p>;
 
@@ -85,9 +83,9 @@ const PlaylistDetail = () => {
         <div className='my-[32px] flex flex-col gap-6 '>
             <section className='max-w-7xl mx-auto' >
                 <div className='grid grid-cols-3 gap-4'>
-                    <div className='col-span-2  '>
+                    <div className='col-span-full  md:col-span-2  '>
                         <VideoPlayer src={video.src} />
-                        <div className='flex flex-col gap-3 my-8 ' >
+                        <div className='flex flex-col gap-3 my-8 px-2 md:px-0 ' >
                             <h4 className='h4'>{video.title}</h4>
                             <div className='flex gap-6 items-center b3 text-primary-100 '>
                                 <p>{video.views} Views</p>
@@ -108,7 +106,7 @@ const PlaylistDetail = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className='flex justify-between items-center'>
+                        <div className='flex justify-between items-center px-2 md:px-0'>
                             <Link to={'/channel/khalesi-north'} className='flex gap-2 items-center'>
                                 <div className='bg-primary-150 w-[58px] h-[58px] rounded-full overflow-hidden'>
                                     <img src='/assets/user.avif' alt='Khalesi North' className='' />
@@ -122,7 +120,7 @@ const PlaylistDetail = () => {
                                 Follow
                             </Button>
                         </div>
-                        <div className='mt-11'>
+                        <div className='mt-11 px-2 md:px-0'>
                             <h6 className='h7' >About this video</h6>
                             <div className='mt-3'>
                                 <p className={` text-primary-100 b6 ${clampDescription && 'line-clamp-2'} `}>
@@ -148,14 +146,14 @@ const PlaylistDetail = () => {
 
                             </div>
                         </div>
-                        <div className='mt-11'>
+                        <div className='mt-11 px-2 md:px-0'>
                             <div className='flex justify-between'>
                                 <h6 className='h7' >Comments ({video.comments.length})</h6>
                                 <button className='h7'>
                                     See All
                                 </button>
                             </div>
-                            <div className='flex flex-col gap-9 mt-10'>
+                            <div className='flex flex-col gap-9 mt-10 px-2 md:px-0'>
                                 {video.comments.map((review) => (
                                     <div key={review.id} className="">
                                         <div className="flex gap-2 items-center">
@@ -180,7 +178,7 @@ const PlaylistDetail = () => {
 
                         </div>
                     </div>
-                    <div className='flex flex-col gap-3'>
+                    <div className='flex flex-col gap-3 col-span-full px-2 md:px-0 '>
                         <h6 className='h7'>Next</h6>
                         {video.nextVideos.map((podcast) => (
                             <PodcastCard layout={'list'} key={podcast.id} name={podcast.name} description={podcast.description} owner={podcast.owner} />

@@ -81,13 +81,13 @@ const ProductDetail = () => {
     if (!product) return <p>Loading...</p>;
     return (
         <div className='flex flex-col gap-y-[100px]' >
-            <section className='max-w-7xl mx-auto w-full py-20' >
+            <section className='max-w-7xl mx-auto w-full py-8  sm:py-16' >
                 <div className='grid grid-cols-3 gap-x-20'>
-                    <div className='col-span-2'>
+                    <div className=' col-span-full   md:col-span-2 md:px-0 px-2 '>
                         <div className='h-[500px] relative flex items-start justify-start rounded-2xl overflow-hidden'>
                             <img src={productImage} className='h-full w-full object-cover' />
                         </div>
-                        <div className="mt-4 flex gap-4">
+                        <div className="mt-4 flex gap-4 ">
                             {product?.images.map((image, index) => (
                                 <button
                                     key={index}
@@ -101,7 +101,7 @@ const ProductDetail = () => {
                         </div>
 
                     </div>
-                    <div className='flex flex-col gap-3'>
+                    <div className='flex flex-col gap-3 col-span-full   md:col-span-1  px-2 md:px-0 '>
                         <h4 className='h4'>{product.name}</h4>
                         <p className='b4 flex items-center gap-2 '>{product.rating} <MdStar className='text-yellow-500' /> ({product.totalReviews})</p>
                         <h4 className='h4'>${product.price}</h4>
@@ -116,14 +116,14 @@ const ProductDetail = () => {
 
                 </div>
             </section>
-            {/* REVIEWS */}
-            <section className='max-w-7xl mx-auto w-full  ' >
+     
+            <section className='max-w-7xl mx-auto w-full px-2 md:px-0  ' >
                 <div className='flex justify-between items-center' >
                     <div>
                         <h5 className='h5'>Reviews</h5>
                         <p className='b4 flex items-center gap-2 '>{product.rating} <MdStar className='text-yellow-500' /> ({product.totalReviews})</p>
                     </div>
-                    <button  className='flex items-center gap-4 bg-black text-white py-4 px-8 h7 mt-10 rounded-xl border mx-w-fit '>
+                    <button  className='flex items-center gap-4 bg-black text-white py-2 px-4 sm:py-4 sm:px-8 h8  rounded-xl border mx-w-fit '>
                         Add Review  
                     </button>
                 </div>

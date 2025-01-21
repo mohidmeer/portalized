@@ -71,7 +71,11 @@ const Header = () => {
                     <button
                     type="button"
                     className="lg:hidden text-white"
-                    onClick={() => document.getElementById('mobile-menu').classList.toggle('hidden')}
+                    onClick={() => {
+                        const menu = document.getElementById('mobile-menu');
+                        menu.classList.toggle('!flex');
+                        
+                    }}
                 >
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -82,7 +86,7 @@ const Header = () => {
             </div>
 
             
-            <div id="mobile-menu" className="lg:hidden flex bg-black text-white space-y-6 px-4 py-6  flex-col ">
+            <div id="mobile-menu" className="hidden bg-black text-white space-y-6 px-4 py-6  flex-col ">
                 <NavLink
                     to="/"
                     className={({ isActive }) => isActive ? "nav-link-active" : "nav-link"}

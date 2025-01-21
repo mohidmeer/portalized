@@ -23,7 +23,7 @@ export default Shop
 const Hero = () => {
     return (
         <section
-            className="flex flex-col min-h-[50vh]  justify-center items-center  bg-portalized bg-no-repeat bg-top bg-[length:700px]  ">
+            className="flex flex-col min-h-[50vh]  justify-center items-center  bg-portalized bg-no-repeat bg-top bg-[length:700px] sm:px-0 px-2  ">
             <div className="max-w-6xl mx-auto flex flex-col gap-6 items-center justify-center">
                 <h1 className="h3 font-light text-center">
                     Find your favorite athlete or coach, Buy your favorite stuff to show your love.
@@ -197,7 +197,7 @@ const Merchandise = () => {
     ];
   
     return (
-      <section className="max-w-7xl mx-auto w-full">
+      <section className="max-w-7xl mx-auto w-full sm:px-0 px-4">
         {sections
           .map((section) => (
             <div key={section.id} className="mb-12">

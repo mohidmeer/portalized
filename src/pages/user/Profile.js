@@ -16,7 +16,7 @@ const Profile = () => {
                 <h5 className="h5 ml-2">Profile</h5>
                 <div className="mt-10">
                     <TabGroup>
-                        <TabList className={'flex gap-10'}>
+                        <TabList className={'flex gap-10  overflow-x-scroll md:overflow-x-auto'}>
                             <Tab className="py-1 px-3  focus:outline-none data-[selected]:border-white text-primary-100 data-[selected]:text-white border-transparent h9 border-b-2 " >
                                 Personal Details
                             </Tab>
@@ -72,7 +72,7 @@ const PersonalDetailsForm = () => {
     };
     return (
         <div>
-            <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-3 gap-4 mt-5">
+            <form onSubmit={handleSubmit(onSubmit)} className="grid md:grid-cols-3 gap-4 mt-10 md:mt-5 px-2 md:px-0">
                 <div className="flex flex-col gap-1">
                     <label className="ml-1">First Name</label>
                     <Input
@@ -112,7 +112,7 @@ const PersonalDetailsForm = () => {
                     </Button>
                 </div>
             </form>
-            <div className="mt-10 flex flex-col gap-8 ">
+            <div className="mt-10 flex flex-col gap-8 px-2 md:px-0 ">
                 <div className="flex justify-between items-center">
                     <div>
                         <p className="c7" >Linked Email</p>
@@ -152,7 +152,7 @@ const ChangePasswordForm = () => {
         console.log('Form Data:', data);
     };
     return (
-        <form onSubmit={handleSubmit} className="grid grid-cols-3 gap-4 mt-5 min-h-[40vh]">
+        <form onSubmit={handleSubmit} className="grid md:grid-cols-3 gap-4 mt-10 md:mt-5 px-2 md:px-0 min-h-[40vh]">
 
             <div className="flex flex-col gap-1">
                 <label className="ml-1">Old Password</label>
@@ -251,7 +251,7 @@ const PaymentOptionsForm = () => {
         };
 
         return (
-            <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-3 gap-4 mt-5">
+            <form onSubmit={handleSubmit(onSubmit)} className="grid md:grid-cols-3 gap-4 mt-10 md:mt-5 px-2 md:px-0 ">
                 <div className="flex flex-col gap-1">
                     <label className="ml-1">Name on Card</label>
                     <Input

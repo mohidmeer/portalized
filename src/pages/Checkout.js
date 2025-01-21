@@ -11,7 +11,7 @@ import Input from '../components/ui/input';
 const Checkout = () => {
 
 
-    const [checkoutStep, setCheckoutStep] = useState("cart");
+    const [checkoutStep, setCheckoutStep] = useState("billing");
 
     const cartItems = useSelector((state) => state.cart.cartItems);
 
@@ -29,8 +29,8 @@ const Checkout = () => {
     return (
         <div className='flex flex-col gap-y-[100px]' >
             <section className='max-w-7xl mx-auto w-full py-20' >
-                <div className='grid grid-cols-3 gap-x-10'>
-                    <div className='rounded-md bg-primary-200 col-span-2 p-4 '>
+                <div className='grid grid-cols-3 gap-10 px-2 md:px-0'>
+                    <div className='rounded-md bg-primary-200 col-span-full  md:col-span-2 p-4 '>
 
                         {checkoutStep === "cart" && (
                             <Cart />
@@ -43,7 +43,7 @@ const Checkout = () => {
                         )}
 
                     </div>
-                    <div className="">
+                    <div className="col-span-full  md:col-span-1">
                         <div className='rounded-md bg-primary-200 p-4 flex flex-col gap-4'>
                             <h3 className="h6">Summary</h3>
 
@@ -126,13 +126,13 @@ function Cart() {
                 {cartItems.map((item) => (
                     <div
                         key={item.id}
-                        className="flex  justify-between  items-center    gap-4 bg-[#121212] p-3 rounded-lg"
+                        className="flex md:flex-row flex-col   justify-between  md:items-center  gap-4 bg-[#121212] p-3 rounded-lg"
                     >
                         <div className='flex gap-6 '>
                             <img
                                 src={item.image}
                                 alt={item.name}
-                                className="w-32 h-32 rounded object-cover"
+                                className="  w-32 h-32 rounded object-cover"
                             />
 
                             <div className="flex-1 flex flex-col justify-between">
@@ -216,7 +216,7 @@ const ShippingForm = ({handleShipping}) => {
                 </div>
 
                 <h6 className="  h8">Shipping Address</h6>
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid md:grid-cols-2 gap-6">
                     <div className='flex flex-col gap-2'>
                         <label className='h9 ml-1' htmlFor="firstName">First Name</label>
                         <Input
@@ -355,9 +355,9 @@ const PaymentForm = () => {
     return (
         <div className="mx-auto max-w-4xl">
             <h2 className="h2 text-left">Payment Details</h2>
-            <form className='grid grid-cols-2 gap-6 mt-10' onSubmit={handleSubmit(onSubmit)}>
+            <form className='md:grid flex flex-col  gap-6 mt-10' onSubmit={handleSubmit(onSubmit)}>
 
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-2 w-full'>
                     <label className='h9 ml-1' htmlFor="cardholderName">Cardholder Name</label>
                     <Input
                         type="text"

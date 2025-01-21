@@ -9,7 +9,7 @@ const Listen = () => {
 
 
     return (
-        <div className='flex flex-col gap-y-[100px]' >
+        <div className='flex flex-col gap-y-[100px] ' >
             <Hero />
             <Podcasts />
         </div>
@@ -24,7 +24,7 @@ export default Listen
 const Hero = () => {
     return (
         <section
-            className="flex flex-col min-h-[50vh]  justify-center items-center  bg-portalized bg-no-repeat bg-top bg-[length:700px]  ">
+            className="flex flex-col min-h-[50vh]  justify-center items-center  bg-portalized bg-no-repeat bg-top bg-[length:700px] sm:px-0 px-2  ">
             <div className="max-w-6xl mx-auto flex flex-col gap-6 items-center justify-center">
                 <h1 className="h3 font-light text-center">
                     Videos That Provide Simple and Practical Guidance for Athletes to Improve Their Skills and Performance
@@ -77,7 +77,7 @@ const Podcasts = () => {
     return (
         <>
             {sections.map((section) => (
-                <section className="max-w-7xl mx-auto w-full">
+                <section className="max-w-7xl mx-auto w-full sm:px-0 px-4">
                     <div key={section.id}>
                         <h3 className="h5">{section.title}</h3>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-9 gap-y-12 mt-9">

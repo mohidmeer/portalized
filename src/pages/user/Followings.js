@@ -23,9 +23,9 @@ const Followings = () => {
     const [data, setData] = useState(mockData)
     return (
         <div className='flex flex-col gap-y-[100px]' >
-            <section className="max-w-7xl mx-auto w-full mt-10">
+            <section className="max-w-7xl mx-auto w-full mt-10 px-2 md:px-0">
                 <h5 className="h5 ml-2">Followings</h5>
-                <div className='grid grid-cols-3 gap-9 mt-10'>
+                <div className='grid  md:grid-cols-2 lg:grid-cols-3 gap-9 mt-10'>
                     {data.map((item) => (
                         <div className="overflow-hidden flex flex-col justify-center items-center w-full  rounded-2xl shadow-md hover:shadow-lg bg-black" key={item.id} >
                             <div className='h-[150px] overflow-hidden relative w-full'>

@@ -24,7 +24,7 @@ export default Watch
 const Hero = () => {
     return (
         <section
-            className="flex flex-col min-h-[50vh]  justify-center items-center  bg-portalized bg-no-repeat bg-top bg-[length:700px]  ">
+            className="flex flex-col min-h-[50vh]  justify-center items-center  bg-portalized bg-no-repeat bg-top bg-[length:700px] p-2  md:p-0  ">
             <div className="max-w-6xl mx-auto flex flex-col gap-6 items-center justify-center">
                 <h1 className="h3 font-light text-center">
                     Videos That Provide Simple and Practical Guidance for Athletes to Improve Their Skills and Performance
@@ -43,8 +43,8 @@ const Hero = () => {
 
 const FeaturedVideo = () => {
     return (
-        <section className=" bg-primary-300 p-8 ">
-            <div className="relative max-w-7xl mx-auto w-full  h-[70vh] rounded-xl overflow-hidden ">
+        <section className=" bg-primary-300 p-1 sm:p-8 ">
+            <div className="relative max-w-7xl mx-auto w-full h-[50vh]  md:h-[70vh] rounded-xl overflow-hidden ">
                 <iframe
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                     title="Featured Video"
@@ -102,7 +102,7 @@ const TrendingTopics = () => {
                 <p className='text-primary-100 c5'>Watch our most trending videos of all time.</p>
             </div>
             <div className='max-w-8xl mx-auto w-full mt-[50px]'>
-                <div className='grid grid-cols-3 gap-4'>
+                <div className='grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:px-0 px-3 '>
                     {trendingtopics.map((video, index) => (
                         <div key={index}>
                             <div className="relative mx-auto w-full rounded-xl overflow-hidden h-[380px]">
@@ -166,7 +166,7 @@ const OurVideos = () => {
                 <p className='text-primary-100 c5'>Watch our most trending videos of all time.</p>
             </div>
             <div className='max-w-8xl mx-auto w-full mt-[50px]'>
-                <div className='grid grid-cols-3 gap-4'>
+                <div className='grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:px-0 px-3'>
                     {   videos.map((video, index) => (
                         <div key={index}>
                             <div className="relative mx-auto w-full rounded-xl overflow-hidden h-[380px]">

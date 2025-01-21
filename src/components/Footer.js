@@ -39,7 +39,7 @@ const Footer = () => {
               <p className='h8'>Account</p>
               <Link className='text-primary-100' to='/sign-up'>Register</Link>
               <Link className='text-primary-100' to='/login'>Login</Link>
-              <Link className='text-primary-100' to='/download-app'>Download App</Link>
+              <Link className='text-primary-100' to='/mobile-app'>Download App</Link>
             </div>
           </div>
 

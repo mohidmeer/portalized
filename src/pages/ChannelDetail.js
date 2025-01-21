@@ -58,7 +58,7 @@ const ChannelDetail = () => {
                 </div>
                 <div className='mt-4 px-6 flex justify-between '>
                     <div className='flex gap-2'>
-                        <div className='bg-primary-150 w-[160px] h-[160px] rounded-full overflow-hidden -translate-y-20  '>
+                        <div className='bg-primary-150 w-[60px] h-[60px] sm:w-[160px] sm:h-[160px] rounded-full overflow-hidden   sm:-translate-y-20  '>
                             <img src='/assets/user.avif' alt={channel.name} className='' />
                         </div>
                         <div>
@@ -70,15 +70,15 @@ const ChannelDetail = () => {
                         Follow
                     </Button>
                 </div>
-                <div className='mt-4'>
-                    <h6 className='h7' >About this video</h6>
+                <div className='mt-4 px-2 md:px-0'>
+                    <h6 className='h7' >About this Channel</h6>
                     <div className='mt-3'>
                         <p className={` text-primary-100 b6  `}> {channel.about}</p>
 
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='px-2 md:px-0' >
                 <TabGroup>
                     <TabList>
                         <Tab className="py-1 px-3  focus:outline-none data-[selected]:border-white data-[selected]:text-white text-primary-100 border-transparent b4 border-b-2 " >

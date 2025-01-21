@@ -54,10 +54,10 @@ body { @apply bg-[#090909] text-white  font-sans  }
 .h4 { @apply lg:text-[32px] md:text-[28px] text-[24px] font-light; }
 .h5 { @apply lg:text-[28px] md:text-[24px] text-[20px] font-light; }
 .h6 { @apply lg:text-[24px] md:text-[20px] text-[18px] font-light; }
-.h7 { @apply text-[24px] font-light; }
-.h8 { @apply text-[20px] font-light; }
-.h9 { @apply text-[18px] font-light; }
-.h10 { @apply text-[14px] font-light; }
+.h7 { @apply font-light text-[18px] md:text-[22px] lg:text-[24px]; }
+.h8 { @apply font-light text-[16px] md:text-[18px] lg:text-[20px]; }
+.h9 { @apply font-light text-[14px] md:text-[16px] lg:text-[18px]; }
+.h10 { @apply font-light text-[12px] md:text-[14px] lg:text-[16px]; }
 
 .b1 { @apply lg:text-[32px] md:text-[28px] text-[24px] font-normal; }
 .b2 { @apply lg:text-[30px] md:text-[26px] text-[22px] font-normal; }
@@ -65,10 +65,10 @@ body { @apply bg-[#090909] text-white  font-sans  }
 .b4 { @apply lg:text-[24px] md:text-[20px] text-[18px] font-normal; }
 .b5 { @apply lg:text-[22px] md:text-[18px] text-[16px] font-normal; }
 .b6 { @apply lg:text-[18px] md:text-[16px] text-[14px] font-normal; }
-.b7 { @apply text-[16px] font-normal; }
-.b8 { @apply text-[14px] font-normal; }
-.b9 { @apply text-[12px] font-normal; }
-.b10 { @apply text-[10px] font-normal; }
+.b7 { @apply font-normal text-[14px] md:text-[15px] lg:text-[16px]; }
+.b8 { @apply font-normal text-[12px] md:text-[13px] lg:text-[14px]; }
+.b9 { @apply font-normal text-[10px] md:text-[11px] lg:text-[12px]; }
+.b10 { @apply font-normal text-[8px] md:text-[9px] lg:text-[10px]; }
 
 .c1 { @apply lg:text-[28px] md:text-[24px] text-[20px]; }
 .c2 { @apply lg:text-[26px] md:text-[22px] text-[18px]; }
@@ -76,10 +76,10 @@ body { @apply bg-[#090909] text-white  font-sans  }
 .c4 { @apply lg:text-[22px] md:text-[18px] text-[16px]; }
 .c5 { @apply lg:text-[20px] md:text-[16px] text-[14px]; }
 .c6 { @apply lg:text-[18px] md:text-[14px] text-[12px]; }
-.c7 { @apply text-[16px]; }
-.c8 { @apply text-[14px]; }
-.c9 { @apply text-[12px]; }
-.c10 { @apply text-[10px]; }
+.c7 { @apply text-[12px] md:text-[14px] lg:text-[16px]; }
+.c8 { @apply text-[10px] md:text-[12px] lg:text-[14px]; }
+.c9 { @apply text-[8px] md:text-[10px] lg:text-[12px]; }
+.c10 { @apply text-[6px] md:text-[8px] lg:text-[10px]; }
 
 
 

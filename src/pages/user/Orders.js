@@ -15,7 +15,7 @@ const Orders = () => {
                 imgSrc: '/assets/product.jpg'
             },
             {
-                id: '1',
+                id: '11',
                 name: 'Khaleesi Signed T-Shirt',
                 price: 150,
                 dateOfOrder: 'Thu 19 Feb, 2024 10:30 pm',
@@ -23,7 +23,7 @@ const Orders = () => {
                 imgSrc: '/assets/product.jpg'
             },
             {
-                id: '1',
+                id: '111',
                 name: 'Khaleesi Signed T-Shirt',
                 price: 150,
                 dateOfOrder: 'Thu 19 Feb, 2024 10:30 pm',
@@ -33,7 +33,7 @@ const Orders = () => {
         ],
         inProgress: [
             {
-                id: '1',
+                id: '11',
                 name: 'Khaleesi Signed T-Shirt',
                 price: 150,
                 dateOfOrder: 'Thu 19 Feb, 2024 10:30 pm',
@@ -41,7 +41,7 @@ const Orders = () => {
                 imgSrc: '/assets/product.jpg'
             },
             {
-                id: '1',
+                id: '1111',
                 name: 'Khaleesi Signed T-Shirt',
                 price: 150,
                 dateOfOrder: 'Thu 19 Feb, 2024 10:30 pm',
@@ -85,36 +85,36 @@ const Orders = () => {
                         </TabList>
                         <TabPanels>
                             <TabPanel>
-                                <div className='flex flex-col mt-5 gap-6'>
+                                <div className='flex flex-col mt-5 gap-6 px-2 md:px-0'>
                                     {
                                         data.completed.map((product) => (
 
-                                            <div className='flex justify-between items-center bg-black p-3 rounded-3xl' key={product.id}>
-                                                <div className='flex gap-4  overflow-hidden' >
-                                                    <div className='w-60  h-60 relative rounded-xl overflow-hidden  '>
+                                            <div className='flex flex-col md:flex-row  justify-between  bg-black p-3 rounded-3xl' key={product.id}>
+                                                <div className='flex gap-4 md:flex-row flex-col overflow-hidden' >
+                                                    <div className='md:w-60  md:h-60 relative rounded-xl overflow-hidden  '>
                                                         <img src={product.imgSrc} className='fill object-cover w-full h-full' />
                                                     </div>
                                                     <div className='flex flex-col gap-3'>
-                                                        <div className='flex gap-10 text-primary-100 h8'>
+                                                        <div className='flex flex-col md:flex-row gap-3 md:gap-10 text-primary-100 h8'>
                                                             <p>Ordered: {product.dateOfOrder}</p>
                                                             <p>Received: {product.dateOfReceival}</p>
                                                         </div>
                                                         <h5 className='h5' >{product.name}</h5>
                                                         <p className='h5'>${product.price}</p>
                                                         <p className='text-green-500' >Received</p>
-                                                        <Button className='!text-[17px] !max-w-fit mb-1 ' >
+                                                        <Button className='!text-[17px] md:!max-w-fit mb-1 ' >
                                                             Buy Again
                                                         </Button>
                                                     </div>
 
                                                 </div>
-                                                <div className='flex flex-col gap-2 justify-center items-center'>
+                                                <div className='flex flex-col gap-2 justify-center md:items-center'>
 
 
-                                                    <Button className='!text-[17px] !max-w-fit ' >
+                                                    <Button className='!text-[17px] md:!max-w-fit ' >
                                                         Write Review
                                                     </Button>
-                                                    <button className='!text-[17px] !max-w-fit p-4  font-light' >
+                                                    <button className='!text-[17px] md:!max-w-fit p-4  font-light' >
                                                         Request Refund  
                                                     </button>
 
@@ -127,13 +127,13 @@ const Orders = () => {
                                 </div>
                             </TabPanel>
                             <TabPanel>
-                                <div className='flex flex-col mt-5 gap-6'>
+                                <div className='flex flex-col mt-5 gap-6 px-2 md:px-0 '>
                                     {
                                         data.inProgress.map((product) => (
 
-                                            <div className='flex justify-between items-center bg-black p-3 rounded-3xl' key={product.id}>
-                                                <div className='flex gap-4  overflow-hidden' >
-                                                    <div className='w-60  h-60 relative rounded-xl overflow-hidden  '>
+                                            <div className='flex flex-col md:flex-row  justify-between  bg-black p-3 rounded-3xl' key={product.id}>
+                                                <div className='flex gap-4 md:flex-row flex-col overflow-hidden' >
+                                                    <div className='md:w-60  md:h-60 relative rounded-xl overflow-hidden  '>
                                                         <img src={product.imgSrc} className='fill object-cover w-full h-full' />
                                                     </div>
                                                     <div className='flex flex-col gap-3'>
@@ -146,13 +146,13 @@ const Orders = () => {
                                                     </div>
 
                                                 </div>
-                                                <div className='flex flex-col gap-2 justify-center items-center'>
+                                                <div className='flex flex-col gap-2 justify-center md:items-center'>
 
 
-                                                    <Button className='!text-[17px] !max-w-fit ' >
+                                                    <Button className='!text-[17px] md:!max-w-fit ' >
                                                         Track Order
                                                     </Button>
-                                                    <button className='!text-[17px] !max-w-fit p-4  font-light text-red-600 ' >
+                                                    <button className='!text-[17px] md:!max-w-fit p-4  font-light text-red-600 ' >
                                                         Cancel Order  
                                                     </button>
 

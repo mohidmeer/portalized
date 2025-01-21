@@ -10,7 +10,7 @@ const ContactUs = () => {
         <div className='flex flex-col gap-y-[100px]' >
             <Hero />
             <section className='max-w-7xl mx-auto '>
-                <div className='grid grid-cols-3 gap-24 my-8 '>
+                <div className='grid md:grid-cols-2  lg:grid-cols-3 gap-10 md:gap-24 my-8 '>
                     <div className='flex flex-col gap-4 bg-primary-300 p-4 rounded-2xl relative   '>
                         <svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="86" height="86" rx="12" fill="black" />
