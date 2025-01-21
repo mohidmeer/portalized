@@ -178,7 +178,7 @@ const PlaylistDetail = () => {
 
                         </div>
                     </div>
-                    <div className='flex flex-col gap-3 col-span-full px-2 md:px-0 '>
+                    <div className='flex flex-col gap-3 col-span-full md:col-span-1 px-2 md:px-0 '>
                         <h6 className='h7'>Next</h6>
                         {video.nextVideos.map((podcast) => (
                             <PodcastCard layout={'list'} key={podcast.id} name={podcast.name} description={podcast.description} owner={podcast.owner} />
