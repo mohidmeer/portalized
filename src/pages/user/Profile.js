@@ -152,7 +152,7 @@ const ChangePasswordForm = () => {
         console.log('Form Data:', data);
     };
     return (
-        <form onSubmit={handleSubmit} className="grid md:grid-cols-3 gap-4 mt-10 md:mt-5 px-2 md:px-0 min-h-[40vh]">
+        <form onSubmit={handleSubmit(onSubmit)} className="grid md:grid-cols-3 gap-4 mt-10 md:mt-5 px-2 md:px-0 min-h-[40vh]">
 
             <div className="flex flex-col gap-1">
                 <label className="ml-1">Old Password</label>

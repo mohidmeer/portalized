@@ -11,7 +11,7 @@ import Input from '../components/ui/input';
 const Checkout = () => {
 
 
-    const [checkoutStep, setCheckoutStep] = useState("billing");
+    const [checkoutStep, setCheckoutStep] = useState("cart");
 
     const cartItems = useSelector((state) => state.cart.cartItems);
 
