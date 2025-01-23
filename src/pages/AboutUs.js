@@ -90,6 +90,7 @@ function Founder () {
                     <h1 className=' text-[50px] sm:text-[100px]  md:text-[140px] font-light text-center  md:text-left'>
                         ADAM <br/> WIILSON
                     </h1>
+                    <p className='b3 text-light text-center  md:text-left  ' >Founder OF PORTALIZED</p>
                 </div>
             </div>
 
