@@ -9,6 +9,7 @@ const AboutUs = () => {
         <div className='flex flex-col gap-y-[100px]' >
             <Hero />
             <OurMission />
+            <Founder/>  
             <PlayStoreCta />
 
         </div>
@@ -72,6 +73,45 @@ const OurMission = () => {
         </>
     )
 
+}
+
+function Founder () {
+
+
+    return (
+
+        <section className='max-w-7xl mx-auto text-center  px-2 sm:px-0'>
+            <h2 className='h2 mb-6'>Meet PORTALIZED Founder</h2>
+            <div className='grid md:grid-cols-2  w-full gap-10  '>
+                <div className='rounded-full flex justify-end relative  ' >
+                    <img  src={'/assets/user.avif'}  className='rounded-full md:w-[512px] md:h-[512px] ' />
+                </div>
+                <div className=''>
+                    <h1 className=' text-[50px] sm:text-[100px]  md:text-[140px] font-light text-center  md:text-left'>
+                        ADAM <br/> WIILSON
+                    </h1>
+                </div>
+            </div>
+
+            <div className='flex flex-col gap-2 text-primary-100     '>
+            <p className='c3 mt-5 text-left' >
+            Adam Wilson is a globally renowned NBA trainer with over 20 years of experience, recognized for his exceptional ability to coach athletes at every level. 
+            With a reputation that spans the globe, Adam has dedicated his career to maximizing player potential and transforming the landscape of basketball training.
+            </p>
+            <p className='c3 mt-5 text-left' >
+                As the founder of PORTALIZED, Adam has embarked on an exciting pivot in his career by creating the "Portal Verse," a revolutionary platform that serves as a comprehensive resource for athletes navigating the NCAA transfer portal. His innovative mobile app provides the most cutting-edge way for players to announce their entry into the transfer portal, while his engaging docuseries stands as the definitive show for college athletics.
+            </p>
+            <p className='c3 mt-5 text-left' >
+                    In addition, PORTALIZED offers a unique line of merchandise designed as the uniform for all athletes, fostering a sense of community and identity. Adam’s podcast serves as a powerful voice for athletes, addressing their experiences and challenges in a rapidly evolving collegiate landscape. With his extensive background and insights, Adam Wilson is at the forefront of the changes in college athletics, leading the charge to empower athletes through the groundbreaking initiatives of PORTALIZED. Join him on this transformative journey!
+            </p>
+
+
+            </div>
+         
+
+
+        </section>
+    )
 }
 
 

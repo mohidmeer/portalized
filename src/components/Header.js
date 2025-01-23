@@ -248,7 +248,7 @@ function User() {
                 </div>
             ) : (
                 <>
-                    <Link to={'/sign-up'} className='btn-link-inverted'>
+                    <Link to={'/sign-up'} className='btn-link-inverted hidden sm:block '>
                         Register
                     </Link>
                     <Link to={'/login'} className='btn-link'>
