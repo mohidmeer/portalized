@@ -33,6 +33,10 @@ const Footer = () => {
               <p className='h8'>Links</p>
               <Link className='text-primary-100' to='/'>Home</Link>
               <Link className='text-primary-100' to='/about-us'>About Us</Link>
+              <Link className='text-primary-100' to='/watch'>Watch</Link>
+              <Link className='text-primary-100' to='/mobile-app'>Download</Link>
+              <Link className='text-primary-100' to='/listen'>Listen</Link>
+              <Link className='text-primary-100' to='/shop'>Shop</Link>
               <Link className='text-primary-100' to='/contact-us'>Contact Us</Link>
             </div>
             <div className='flex flex-col gap-5'>

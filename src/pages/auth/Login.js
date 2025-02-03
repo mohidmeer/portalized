@@ -62,7 +62,7 @@ const Login = () => {
           <div className="flex gap-2 items-center justify-center">
             <p className="font-extralight">Don't have an Account?</p>
             <Link to={'/sign-up'} className="text-[20px]">
-              Create Now
+              Create One 
             </Link>
           </div>
         </div>

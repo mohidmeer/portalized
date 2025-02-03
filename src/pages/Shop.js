@@ -26,7 +26,7 @@ const Hero = () => {
             className="flex flex-col min-h-[50vh]  justify-center items-center  bg-portalized bg-no-repeat bg-top bg-[length:700px] sm:px-0 px-2  ">
             <div className="max-w-6xl mx-auto flex flex-col gap-6 items-center justify-center">
                 <h1 className="h3 font-light text-center">
-                    Find your favorite athlete or coach, Buy your favorite stuff to show your love.
+                    Shop Our Exclusive Portalized Merchandise
                 </h1>
                 <p className="text-center text-primary-150 c5">
                 Create your college account, add coaches, and unlock opportunities to connect with talented athletes. Empower sponsorships and build lasting success together.

@@ -24,7 +24,7 @@ const SignUp = () => {
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5 mt-10">    
         <Input
           Icon={CiUser}
-          placeholder="Enter your full name"
+          placeholder="Full Name"
           error={errors.name} // Pass error state for name field
           {...register("name", { required: "Name is required" })}
         />
@@ -33,7 +33,7 @@ const SignUp = () => {
 
         <Input
           Icon={MdOutlineMail}
-          placeholder="Enter your email"
+          placeholder="Email"
           error={errors.email}
           {...register("email", {
             required: "Email is required",
@@ -49,7 +49,7 @@ const SignUp = () => {
         <Input
           Icon={MdLockOutline}
           type="password"
-          placeholder="Enter your account password"
+          placeholder="Password"
           error={errors.password} 
           {...register("password", {
             required: "Password is required",
@@ -65,7 +65,7 @@ const SignUp = () => {
         <Input
           Icon={MdLockOutline}
           type="password"
-          placeholder="Re-enter your account password"
+          placeholder="Confirm Password"
           error={errors.confirmPassword} // Pass error state for confirmPassword field
           {...register("confirmPassword", {
             required: "Please confirm your password",
@@ -76,7 +76,7 @@ const SignUp = () => {
 
 
         <div className="flex flex-col gap-3">
-          <Button type="submit">Create your account</Button>
+          <Button type="submit">Create Account</Button>
           <div className="flex gap-2 items-center justify-center">
             <p className="font-extralight">Already have an account?</p>
             <Link to={"/login"} className="text-[20px]">

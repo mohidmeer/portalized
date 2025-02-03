@@ -10,7 +10,7 @@ const MobileApp = () => {
             <Working />
             <Hero2 />
             <Features />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <Download/>
 
 
@@ -73,26 +73,23 @@ const Working = () => {
             <section className='max-w-7xl mx-auto mt-[50px] sm:mt-[100px] px-4 sm:px-0  '>
                 <h2 className='h2 text-center'>How it Works</h2>
                 <p className='b4 text-primary-100 text-center'>Mustache loko af street chartreuse. Taxidermy bicycle vaporware a plaid disrupt vexillologist mug. Flannel copper. </p>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-20 md:gap-24 my-8 '>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 sm:gap-20 md:gap-24 my-8 '>
                     <div className='flex flex-col gap-4 bg-primary-300 p-4 rounded-2xl relative   '>
-                        <svg width="118" height="110" viewBox="0 0 118 110" className='border rounded-xl s ' fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="118" height="110" viewBox="0 0 118 110" fill="none" className='border rounded-xl ' xmlns="http://www.w3.org/2000/svg">
                             <rect width="117.333" height="110" rx="20" fill="#151515" />
-                            <g clip-path="url(#clip0_10220_1830)">
-                                <path d="M58.6665 31.5996L31.6665 44.1996L38.8665 47.4396V53.5596C36.7065 54.2796 35.2665 56.4396 35.2665 58.5996C35.2665 60.7596 36.7065 62.9196 38.8665 63.6396V63.9996L35.6265 71.5596C34.5465 74.7996 35.2665 78.3996 40.6665 78.3996C46.0665 78.3996 46.7865 74.7996 45.7065 71.5596L42.4665 63.9996C44.6265 62.9196 46.0665 61.1196 46.0665 58.5996C46.0665 56.0796 44.6265 54.2796 42.4665 53.5596V49.2396L58.6665 56.7996L85.6665 44.1996L58.6665 31.5996ZM74.5065 54.9996L58.3065 62.1996L49.6665 58.2396V58.5996C49.6665 61.1196 48.5865 63.2796 46.7865 65.0796L48.9465 70.1196V70.4796C49.3065 71.9196 49.6665 73.3596 49.3065 74.7996C51.8265 75.8796 54.7065 76.5996 58.3065 76.5996C70.1865 76.5996 74.5065 69.3996 74.5065 65.7996V54.9996Z" fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_10220_1830">
-                                    <rect width="54" height="54" fill="white" transform="translate(31.6665 28)" />
-                                </clipPath>
-                            </defs>
+                            <path d="M63.1665 43.75C66.2731 43.75 68.7915 41.2316 68.7915 38.125C68.7915 35.0184 66.2731 32.5 63.1665 32.5C60.0599 32.5 57.5415 35.0184 57.5415 38.125C57.5415 41.2316 60.0599 43.75 63.1665 43.75Z" fill="white" />
+                            <path d="M64.2919 58.7125L53.9419 54.1C52.8169 53.5375 52.2544 55.225 51.6919 56.35C51.1294 57.475 47.0794 64.45 47.4169 65.6875C47.7544 66.7 48.6544 67.2625 49.5544 67.2625C49.7794 67.2625 50.0044 67.2625 50.2294 67.15L64.0669 62.875C64.9669 62.65 65.6419 61.75 65.6419 60.85C65.6419 59.95 65.0794 59.05 64.2919 58.7125Z" fill="white" />
+                            <path d="M61.8161 45.0996L59.3411 43.9746C57.8786 43.2996 56.0786 43.9746 55.4036 45.4371L42.0161 74.2371C41.4536 75.3621 42.0161 76.7121 43.1411 77.2746C43.4786 77.3871 43.8161 77.4996 44.1536 77.4996C45.0536 77.4996 45.8411 77.0496 46.1786 76.2621C46.1786 76.2621 56.9786 61.2996 57.8786 59.4996C58.7786 57.6996 63.3911 49.0371 63.3911 49.0371C63.9536 47.5746 63.3911 45.7746 61.8161 45.0996Z" fill="white" />
+                            <path d="M77.229 45.6625C76.4415 44.7625 74.979 44.5375 74.079 45.325L68.454 50.05L61.254 46.1125C60.0165 45.4375 58.329 45.6625 57.5415 47.125C56.6415 48.5875 57.0915 50.3875 58.4415 50.95L67.779 54.775C68.1165 54.8875 68.454 55 68.7915 55C69.354 55 69.804 54.775 70.254 54.4375L77.004 48.8125C77.904 48.025 78.0165 46.675 77.229 45.6625ZM44.829 53.9875L48.654 48.25L53.829 48.925L55.5165 45.4375C55.9665 44.425 56.8665 43.8625 57.879 43.75H47.529C46.7415 43.75 46.0665 44.0875 45.6165 44.7625L41.1165 51.5125C40.4415 52.525 40.6665 53.9875 41.7915 54.6625C42.0165 54.8875 42.4665 55 42.9165 55C43.5915 55 44.379 54.6625 44.829 53.9875Z" fill="white" />
                         </svg>
                         <h6 className='h7' >
-                            College
+                            Athlete
                         </h6>
                         <p className='c7 text-primary-100'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
-                        <img src='/assets/arrow.png' className=' z-10 absolute  top-1/2  -translate-y-1/2 right-[-30%] lg:block hidden  ' />
+                        <img src='/assets/arrow.png' className=' z-10 absolute  top-1/2  -translate-y-1/2 right-[-20%] lg:block hidden  ' />
+                        
                     </div>
                     <div className='flex flex-col gap-4 bg-primary-300 p-4 rounded-2xl relative '>
                         <svg width="118" height="110" viewBox="0 0 118 110" fill="none" className='border rounded-xl' xmlns="http://www.w3.org/2000/svg">
@@ -106,43 +103,16 @@ const Working = () => {
                         <p className='c7 text-primary-100'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
-                        <img src='/assets/arrow.png' className=' z-10 absolute  top-1/2  -translate-y-1/2 right-[-30%] scale-y-[-1] lg:block hidden  ' />
+                        {/* <img src='/assets/arrow.png' className=' z-10 absolute  top-1/2  -translate-y-1/2 right-[-30%] scale-y-[-1] lg:block hidden  ' /> */}
                     </div>
-                    <div className='flex flex-col gap-4 bg-primary-300 p-4 rounded-2xl relative '>
-                        <svg width="118" height="110" viewBox="0 0 118 110" fill="none" className='border rounded-xl ' xmlns="http://www.w3.org/2000/svg">
-                            <rect width="117.333" height="110" rx="20" fill="#151515" />
-                            <path d="M63.1665 43.75C66.2731 43.75 68.7915 41.2316 68.7915 38.125C68.7915 35.0184 66.2731 32.5 63.1665 32.5C60.0599 32.5 57.5415 35.0184 57.5415 38.125C57.5415 41.2316 60.0599 43.75 63.1665 43.75Z" fill="white" />
-                            <path d="M64.2919 58.7125L53.9419 54.1C52.8169 53.5375 52.2544 55.225 51.6919 56.35C51.1294 57.475 47.0794 64.45 47.4169 65.6875C47.7544 66.7 48.6544 67.2625 49.5544 67.2625C49.7794 67.2625 50.0044 67.2625 50.2294 67.15L64.0669 62.875C64.9669 62.65 65.6419 61.75 65.6419 60.85C65.6419 59.95 65.0794 59.05 64.2919 58.7125Z" fill="white" />
-                            <path d="M61.8161 45.0996L59.3411 43.9746C57.8786 43.2996 56.0786 43.9746 55.4036 45.4371L42.0161 74.2371C41.4536 75.3621 42.0161 76.7121 43.1411 77.2746C43.4786 77.3871 43.8161 77.4996 44.1536 77.4996C45.0536 77.4996 45.8411 77.0496 46.1786 76.2621C46.1786 76.2621 56.9786 61.2996 57.8786 59.4996C58.7786 57.6996 63.3911 49.0371 63.3911 49.0371C63.9536 47.5746 63.3911 45.7746 61.8161 45.0996Z" fill="white" />
-                            <path d="M77.229 45.6625C76.4415 44.7625 74.979 44.5375 74.079 45.325L68.454 50.05L61.254 46.1125C60.0165 45.4375 58.329 45.6625 57.5415 47.125C56.6415 48.5875 57.0915 50.3875 58.4415 50.95L67.779 54.775C68.1165 54.8875 68.454 55 68.7915 55C69.354 55 69.804 54.775 70.254 54.4375L77.004 48.8125C77.904 48.025 78.0165 46.675 77.229 45.6625ZM44.829 53.9875L48.654 48.25L53.829 48.925L55.5165 45.4375C55.9665 44.425 56.8665 43.8625 57.879 43.75H47.529C46.7415 43.75 46.0665 44.0875 45.6165 44.7625L41.1165 51.5125C40.4415 52.525 40.6665 53.9875 41.7915 54.6625C42.0165 54.8875 42.4665 55 42.9165 55C43.5915 55 44.379 54.6625 44.829 53.9875Z" fill="white" />
-                        </svg>
-
-                        <h6 className='h7' >
-                            Athlete
-                        </h6>
-                        <p className='c7 text-primary-100'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        </p>
-
-                    </div>
+                   
 
                 </div>
-                <div className='flex flex-col justify-center items-center'>
-                    <Link className='flex items-center gap-2'>
-                        <span>Learn More </span>
-                        <svg width="28" height="26" viewBox="0 0 28 26" fill="none" className='' xmlns="http://www.w3.org/2000/svg">
-                            <path d="M27.3332 13C27.3332 6.09476 21.3654 0.5 13.9998 0.5C6.63425 0.5 0.666504 6.09476 0.666504 13C0.666504 19.9052 6.63425 25.5 13.9998 25.5C21.3654 25.5 27.3332 19.9052 27.3332 13ZM3.24715 13C3.24715 7.43044 8.05898 2.91935 13.9998 2.91935C19.9407 2.91935 24.7525 7.43044 24.7525 13C24.7525 18.5696 19.9407 23.0806 13.9998 23.0806C8.05898 23.0806 3.24715 18.5696 3.24715 13ZM7.11812 14.0081V11.9919C7.11812 11.6593 7.40844 11.3871 7.76328 11.3871H13.9998V8.01008C13.9998 7.47077 14.6934 7.20363 15.102 7.58165L20.4246 12.5716C20.6773 12.8085 20.6773 13.1915 20.4246 13.4284L15.102 18.4183C14.6934 18.8014 13.9998 18.5292 13.9998 17.9899V14.6129H7.76328C7.40844 14.6129 7.11812 14.3407 7.11812 14.0081Z" fill="white" />
-                        </svg>
-
-
-                    </Link>
-                </div>
+              
             </section>
 
-            <section className='bg-primary-300 px-2  '>
-
+            <section className='bg-primary-300 px-2'>
                 <h2 className='h2 mx-auto max-w-7xl py-10 sm:py-20 ' >Our goal is to give everyone the opportunity to take advantage of the most cutting-edge Platform on the market.</h2>
-
             </section>
 
 
@@ -166,7 +136,7 @@ const Features = () => {
                             </Link>
                         </div>
                         <div className='md:col-span-4 col-span-full flex flex-col md:items-end order-1 md:order-2 w-2/3 mx-auto sm:w-full  ' >
-                            <img src='/assets/feature1.png' />
+                            <img src='/assets/feature2  .png' />
                         </div>
                     </div>
                 </div>
@@ -175,7 +145,7 @@ const Features = () => {
                 <div className='max-w-8xl mx-auto   '>
                     <div className='grid grid-cols-10    ' >
                         <div className='md:col-span-4 col-span-full flex flex-col md:items-start  w-2/3 mx-auto md:w-full ' >
-                            <img src='/assets/feature2.png' />
+                            <img src='/assets/feature1.png' />
                         </div>
                         <div className='flex flex-col gap-4 justify-center md:col-span-6  col-span-full'>
                             <p className='b6 text-primary-100 mt-4 md:mt-0' >Features</p>
@@ -328,7 +298,7 @@ const TestimonialItem = ({ testimony, name, title }) => {
 
 const Download = () => {
     return (
-        <section className='bg-download bg-cover '>
+        <section className='bg-download bg-cover py-20 '>
             <div className='flex flex-col gap-6 max-w-3xl mx-auto py-20 justify-center items-center sm:p-0 p-2'>
                 <h1 className='top-heading font-light text-center'>
                     Love our Application? Download Now

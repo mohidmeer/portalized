@@ -25,8 +25,8 @@ const ContactUs = () => {
                         <p className='c7 text-primary-100'>
                             Speak to our friendly team.
                         </p>
-                        <p className='c7 '>
-                            sales@untitled.com
+                        <p className='c7 lowercase'>
+                            contact@PORTALIZED.com
                         </p>
 
                     </div>
@@ -91,7 +91,7 @@ const Hero = () => {
             className="flex flex-col min-h-[30vh]  justify-center items-center  bg-portalized bg-no-repeat bg-top bg-[length:700px]  ">
             <div className="max-w-6xl mx-auto flex flex-col gap-6 items-center justify-center">
                 <h1 className="h3 font-light text-center">
-                    Contact Us Now
+                    Get in Touch with Us
                 </h1>
                 <p className="text-center text-primary-150 c5">
                     Let us know how we can help.

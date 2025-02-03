@@ -19,8 +19,8 @@ const Landing = () => {
             <Cta />
             <Merchandise />
             <Trending />
-            <Vision/>
-            <Faqs/>
+            {/* <Vision/> */}
+            {/* <Faqs/> */}
         </div>
     )
 }
@@ -33,13 +33,13 @@ const Hero = () => {
             className="flex flex-col min-h-[80vh]  justify-center items-center  bg-portalized bg-no-repeat bg-top bg-[length:700px]  ">
             <div className="max-w-6xl mx-auto flex flex-col gap-6 items-center justify-center">
                 <h1 className="top-heading font-light text-center">
-                    Connecting Colleges, Coaches, and Athletes: Build Opportunities, Foster Success!
+                        Your Journey, Your Platform, Your Future
                 </h1>
                 <p className="text-center text-primary-150 c5">
                     Create your college account, add coaches, and unlock opportunities to connect with talented athletes. Empower sponsorships and build lasting success together.
                 </p>
                 <Link to={'/login'} className="btn-link !max-w-fit !rounded-full !px-10">
-                    Get Started
+                    Let’s Get Started 
                 </Link>
             </div>
             <img src="/assets/portalized.svg" alt="Example SVG" className="mt-10 h-[100px] md:px-0 px-4 " />
@@ -217,7 +217,7 @@ const Merchandise = () => {
     return (
         <section className='bg-primary-300 py-12'>
             <div className='max-w-8xl mx-auto flex flex-col justify-center items-center'>
-                <h1 className='text-center h1 p-2'>Explore the Merchandise from Athletes and Coaches</h1>
+                <h1 className='text-center h1 p-2'>Portalized Merchandise</h1>
                 <p className='p-2 c3 text-primary-100 text-center'>Swag ethical book same food cray four plaid fit. Vaporware marfa direct chicharrones put quinoa man. </p>
 
                 <div className='grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-[60px] sm:px-0 p-3 '>
@@ -247,7 +247,7 @@ const Trending = () => {
     return (
         <section className='bg-primary-300 py-12'>
             <div className='max-w-8xl mx-auto flex flex-col justify-center items-center'>
-                <h1 className='text-center h1 p-2'>Explore the Trending Podcasts in Sports</h1>
+                <h1 className='text-center h1 p-2'>Portal News</h1>
                 <p className='c3 text-primary-100 text-center p-2'>Listen to engaging discussions and insights from top athletes, coaches, and experts worldwide.</p>
 
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-[60px] sm:px-0 p-3'>
