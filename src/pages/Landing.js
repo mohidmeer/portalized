@@ -206,12 +206,12 @@ const Cta = () => {
 }
 const Merchandise = () => {
     const products = [
-        { id: 1, name: 'Khaleesi Signed T-Shirt', price: '$150', description: 'Chartreuse hexagon aesthetic jianbing offal craft artisan. Man goth truffaut tousled cardigan. Bodega subway.', owner: 'Khaleesi North' },
-        { id: 2, name: 'Arya Stark Hoodie', price: '$120', description: 'Vaporware marfa direct chicharrones put quinoa man.', owner: 'Arya Stark' },
-        { id: 3, name: 'Jon Snow Jacket', price: '$180', description: 'Swag ethical book same food cray four plaid fit.', owner: 'Jon Snow' },
-        { id: 4, name: 'Daenerys Targaryen Cap', price: '$90', description: 'Man goth truffaut tousled cardigan. Bodega subway.', owner: 'Daenerys Targaryen' },
-        { id: 5, name: 'Tyrion Lannister Shoes', price: '$130', description: 'Offal craft artisan. Man goth truffaut tousled cardigan.', owner: 'Tyrion Lannister' },
-        { id: 6, name: 'Sansa Stark Scarf', price: '$70', description: 'Chartreuse hexagon aesthetic jianbing offal craft artisan.', owner: 'Sansa Stark' },
+        { id: 1, name: 'Khaleesi Hoodie', price: '$150', description: 'Chartreuse hexagon aesthetic jianbing offal craft artisan. Man goth truffaut tousled cardigan. Bodega subway.', owner: 'Khaleesi North', image: '/assets/products/p1.jpg' },
+        { id: 2, name: 'Arya Stark Hoodie', price: '$120', description: 'Vaporware marfa direct chicharrones put quinoa man.', owner: 'Arya Stark', image: '/assets/products/p2.jpg' },
+        { id: 3, name: 'Jon Snow Hoodie', price: '$180', description: 'Swag ethical book same food cray four plaid fit.', owner: 'Jon Snow', image: '/assets/products/p3.jpg' },
+        { id: 4, name: 'Daenerys Targaryen Hoodie', price: '$90', description: 'Man goth truffaut tousled cardigan. Bodega subway.', owner: 'Daenerys Targaryen', image: '/assets/products/p4.jpg' },
+        { id: 5, name: 'Tyrion Lannister Hoodie', price: '$10', description: 'Offal craft artisan. Man goth truffaut tousled cardigan.', owner: 'Tyrion Lannister', image: '/assets/products/p1.jpg' },
+        { id: 6, name: 'Sansa Stark Hoodie', price: '$70', description: 'Chartreuse hexagon aesthetic jianbing offal craft artisan.', owner: 'Sansa Stark', image: '/assets/products/p2.jpg' },
     ];
 
     return (
@@ -222,7 +222,7 @@ const Merchandise = () => {
 
                 <div className='grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-[60px] sm:px-0 p-3 '>
                     {products.map((product) => (
-                        <ProductCard key={product.id} name={product.name} price={product.price} description={product.description} owner={product.owner} />
+                        <ProductCard key={product.id} name={product.name} price={product.price} description={product.description} owner={product.owner} imgsrc={product.image} />
                     ))}
                 </div>
 

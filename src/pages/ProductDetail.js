@@ -24,7 +24,7 @@ const ProductDetail = () => {
                     owner: 'Khaleesi North',
                     rating: '4.5',
                     totalReviews: '15',
-                    images: ['/assets/product.jpg', '/assets/product2.png', '/assets/product.jpg', '/assets/product2.png'],
+                    images: ['/assets/products/p1.jpg', '/assets/products/p2.jpg', '/assets/products/p3.jpg', '/assets/products/p4.jpg'],
                     reviews: [
                         {
                             id: 1,
@@ -84,7 +84,7 @@ const ProductDetail = () => {
             <section className='max-w-7xl mx-auto w-full py-8  sm:py-16' >
                 <div className='grid grid-cols-3 gap-x-20'>
                     <div className=' col-span-full   md:col-span-2 md:px-0 px-2 '>
-                        <div className='h-[500px] relative flex items-start justify-start rounded-2xl overflow-hidden'>
+                        <div className='h-[700px] relative flex items-start justify-start rounded-2xl overflow-hidden'>
                             <img src={productImage} className='h-full w-full object-cover' />
                         </div>
                         <div className="mt-4 flex gap-4 ">

@@ -80,7 +80,7 @@ const SignUp = () => {
           <div className="flex gap-2 items-center justify-center">
             <p className="font-extralight">Already have an account?</p>
             <Link to={"/login"} className="text-[20px]">
-              Log In
+              Login
             </Link>
           </div>
         </div>

@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 import { FaHeart } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
-const ProductCard = ({ action=false, isLiked = false, slug = 'khalesi-signed-t-shirt', name, imgsrc = '/assets/product.jpg', description, owner, price, rating = '4.5', comments = '15' }) => {
+const ProductCard = ({ action = false, isLiked = false, slug = 'khalesi-signed-t-shirt', name, imgsrc = '/assets/product.jpg', description, owner, price, rating = '4.5', comments = '15' }) => {
     return (
         <Link to={'/product/' + slug} className='bg-black overflow-hidden rounded-3xl'>
-            <div className='relative h-[250px] overflow-hidden'>
-                <img src={imgsrc} alt={name} className='fill' />
+            <div className="relative h-[250px] overflow-hidden flex items-center justify-center">
+                <img src={imgsrc} alt={name} className="w-full h-full object-cover" />
             </div>
             <div className='flex flex-col p-4 gap-3'>
                 <div className='flex flex-col gap-2'>
@@ -30,7 +30,7 @@ const ProductCard = ({ action=false, isLiked = false, slug = 'khalesi-signed-t-s
                         <p className='b6'>{owner}</p>
                     </div>
                     {
-                        action && <button> <BsThreeDotsVertical size={34}/></button>
+                        action && <button> <BsThreeDotsVertical size={34} /></button>
                     }
                 </div>
             </div>
