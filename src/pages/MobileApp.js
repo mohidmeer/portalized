@@ -300,9 +300,9 @@ const Download = () => {
     return (
         <section className='bg-download bg-cover py-20 '>
             <div className='flex flex-col gap-6 max-w-3xl mx-auto py-20 justify-center items-center sm:p-0 p-2'>
-                {/* <h1 className='top-heading font-light text-center'>
-                    Love our Application? Download Now
-                </h1> */}
+                <h1 className='top-heading font-light text-center'>
+                    Download Now
+                </h1>
                 <p className='c6'>Portalized provides a safe platform for Coaches and Athletes.</p>
                 <div className='flex flex-col gap-10'>
                     <div className='flex  gap-4'>
