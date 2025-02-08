@@ -7,9 +7,9 @@ import ContactFrom from '../components/ContactFrom'
 const AboutUs = () => {
     return (
         <div className='flex flex-col gap-y-[100px]' >
-            <Hero />
-            <OurMission />
+            {/* <Hero /> */}
             <Founder />
+            <OurMission />
             {/* <PlayStoreCta /> */}
 
         </div>
@@ -80,7 +80,7 @@ function Founder() {
 
     return (
 
-        <section className='max-w-7xl mx-auto text-center  px-2 sm:px-0'>
+        <section className='max-w-7xl mx-auto text-center  px-2 sm:px-0 my-10'>
             <h2 className='h2 mb-6'>The Man Behind Portalized</h2>
             <div className='grid md:grid-cols-2  w-full gap-10  '>
                 <div className='rounded-full flex justify-end relative  ' >
@@ -106,9 +106,6 @@ function Founder() {
                     In addition, PORTALIZED offers a unique line of merchandise designed as the uniform for all athletes, fostering a sense of community and identity. Adam’s podcast serves as a powerful voice for athletes, addressing their experiences and challenges in a rapidly evolving collegiate landscape. With his extensive background and insights, Adam Wilson is at the forefront of the changes in college athletics, leading the charge to empower athletes through the groundbreaking initiatives of PORTALIZED. Join him on this transformative journey!
                 </p>
             </div>
-
-
-
         </section>
     )
 }

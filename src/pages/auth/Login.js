@@ -57,7 +57,7 @@ const Login = () => {
         </div>
         <div className="flex flex-col gap-3">
           <Button type="submit">
-            Log In
+            Login
           </Button>
           <div className="flex gap-2 items-center justify-center">
             <p className="font-extralight">Don't have an Account?</p>

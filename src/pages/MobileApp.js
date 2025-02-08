@@ -136,7 +136,7 @@ const Features = () => {
                             </Link>
                         </div>
                         <div className='md:col-span-4 col-span-full flex flex-col md:items-end order-1 md:order-2 w-2/3 mx-auto sm:w-full  ' >
-                            <img src='/assets/feature2  .png' />
+                            <img src='/assets/feature2.png' />
                         </div>
                     </div>
                 </div>
@@ -300,9 +300,9 @@ const Download = () => {
     return (
         <section className='bg-download bg-cover py-20 '>
             <div className='flex flex-col gap-6 max-w-3xl mx-auto py-20 justify-center items-center sm:p-0 p-2'>
-                <h1 className='top-heading font-light text-center'>
+                {/* <h1 className='top-heading font-light text-center'>
                     Love our Application? Download Now
-                </h1>
+                </h1> */}
                 <p className='c6'>Portalized provides a safe platform for Coaches and Athletes.</p>
                 <div className='flex flex-col gap-10'>
                     <div className='flex  gap-4'>
