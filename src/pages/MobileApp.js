@@ -56,7 +56,7 @@ const Hero2 = () => {
                     className="mt-10 h-[100px]"
                 />
                 <img
-                    src="/assets/iphoneblack.png"
+                    src="/assets/iphone3.png"
                     alt="iPhone Black"
                     className="absolute inset-0 mx-auto top-1/2 transform -translate-y-1/2 w-1/2 lg:max-w-fit "
                 />
