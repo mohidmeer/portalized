@@ -9,7 +9,7 @@ const ContactUs = () => {
     return (
         <div className='flex flex-col gap-y-[100px]' >
             <Hero />
-            <section className='max-w-7xl mx-auto '>
+            {/* <section className='max-w-7xl mx-auto '>
                 <div className='grid md:grid-cols-2  lg:grid-cols-3 gap-10 md:gap-24 my-8 '>
                     <div className='flex flex-col gap-4 bg-primary-300 p-4 rounded-2xl relative   '>
                         <svg width="86" height="86" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,17 +65,17 @@ const ContactUs = () => {
                         </p>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className='max-w-6xl bg-black  rounded-2xl p-10 mx-auto w-full '>
                 <div className='max-w-[450px] mx-auto '>
-                    <ContactForm/>
+                    <ContactForm />
                 </div>
 
             </section>
 
-            <Faqs/>
-                
+            <Faqs />
+
         </div>
     )
 }
@@ -93,10 +93,16 @@ const Hero = () => {
                 <h1 className="h3 font-light text-center">
                     Get in Touch with Us
                 </h1>
-                <p className="text-center text-primary-150 c5">
-                    Let us know how we can help.
-                </p>
+                <div className='text-center' > 
+                    <p className="text-center text-primary-150 c5">
+                        Let us know how we can help.
+                    </p>
 
+                    <p className='c7 lowercase'>
+                        contact@PORTALIZED.com
+                    </p>
+
+                </div>
             </div>
         </section>
     )

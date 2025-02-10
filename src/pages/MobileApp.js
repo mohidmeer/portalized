@@ -11,7 +11,7 @@ const MobileApp = () => {
             <Hero2 />
             <Features />
             {/* <Testimonials /> */}
-            <Download/>
+            <Download />
 
 
         </div>
@@ -29,9 +29,9 @@ const Hero = () => {
                     <h1 className="top-heading font-light text-center">
                         Are you ready to take control of your athletic journey
                     </h1>
-                    <p className="text-center text-primary-150 c5">
+                    {/* <p className="text-center text-primary-150 c5">
                         Start your journey without any hustle, documentation. Register yourself and get started with the new beginning.
-                    </p>
+                    </p> */}
                     <Link to={'/login'} className="btn-link !max-w-fit !rounded-full !px-10">
                         Enter the Portal
                     </Link>
@@ -43,13 +43,11 @@ const Hero = () => {
                     <img src="/assets/iphone.png" alt="Example SVG" className="absolute top-0 translate-y-[-25%] sm:translate-y-[-45%] mx-auto" />
                 </div>
             </section>
-
         </>
     )
 }
 const Hero2 = () => {
     return (
-
         <section className="flex flex-col justify-center items-center h-[30vh] sm:h-[60vh]">
             <div className="relative">
                 <img
@@ -73,23 +71,21 @@ const Working = () => {
             <section className='max-w-7xl mx-auto mt-[50px] sm:mt-[100px] px-4 sm:px-0  '>
                 <h2 className='h2 text-center'>How it Works</h2>
                 <p className='b4 text-primary-100 text-center'>Mustache loko af street chartreuse. Taxidermy bicycle vaporware a plaid disrupt vexillologist mug. Flannel copper. </p>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 sm:gap-20 md:gap-24 my-8 '>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-20 md:gap-24 my-8 '>
                     <div className='flex flex-col gap-4 bg-primary-300 p-4 rounded-2xl relative   '>
-                    <svg width="118" height="110" viewBox="0 0 118 110" fill="none" className='border rounded-xl ' xmlns="http://www.w3.org/2000/svg">
+                        <svg width="118" height="110" viewBox="0 0 118 110" fill="none" className='border rounded-xl' xmlns="http://www.w3.org/2000/svg">
                             <rect width="117.333" height="110" rx="20" fill="#151515" />
-                            <path d="M63.1665 43.75C66.2731 43.75 68.7915 41.2316 68.7915 38.125C68.7915 35.0184 66.2731 32.5 63.1665 32.5C60.0599 32.5 57.5415 35.0184 57.5415 38.125C57.5415 41.2316 60.0599 43.75 63.1665 43.75Z" fill="white" />
-                            <path d="M64.2919 58.7125L53.9419 54.1C52.8169 53.5375 52.2544 55.225 51.6919 56.35C51.1294 57.475 47.0794 64.45 47.4169 65.6875C47.7544 66.7 48.6544 67.2625 49.5544 67.2625C49.7794 67.2625 50.0044 67.2625 50.2294 67.15L64.0669 62.875C64.9669 62.65 65.6419 61.75 65.6419 60.85C65.6419 59.95 65.0794 59.05 64.2919 58.7125Z" fill="white" />
-                            <path d="M61.8161 45.0996L59.3411 43.9746C57.8786 43.2996 56.0786 43.9746 55.4036 45.4371L42.0161 74.2371C41.4536 75.3621 42.0161 76.7121 43.1411 77.2746C43.4786 77.3871 43.8161 77.4996 44.1536 77.4996C45.0536 77.4996 45.8411 77.0496 46.1786 76.2621C46.1786 76.2621 56.9786 61.2996 57.8786 59.4996C58.7786 57.6996 63.3911 49.0371 63.3911 49.0371C63.9536 47.5746 63.3911 45.7746 61.8161 45.0996Z" fill="white" />
-                            <path d="M77.229 45.6625C76.4415 44.7625 74.979 44.5375 74.079 45.325L68.454 50.05L61.254 46.1125C60.0165 45.4375 58.329 45.6625 57.5415 47.125C56.6415 48.5875 57.0915 50.3875 58.4415 50.95L67.779 54.775C68.1165 54.8875 68.454 55 68.7915 55C69.354 55 69.804 54.775 70.254 54.4375L77.004 48.8125C77.904 48.025 78.0165 46.675 77.229 45.6625ZM44.829 53.9875L48.654 48.25L53.829 48.925L55.5165 45.4375C55.9665 44.425 56.8665 43.8625 57.879 43.75H47.529C46.7415 43.75 46.0665 44.0875 45.6165 44.7625L41.1165 51.5125C40.4415 52.525 40.6665 53.9875 41.7915 54.6625C42.0165 54.8875 42.4665 55 42.9165 55C43.5915 55 44.379 54.6625 44.829 53.9875Z" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M41.6377 60.0636C42.279 59.2237 42.4695 58.1626 42.3167 57.1387C42.1071 55.719 42.1071 54.279 42.3167 52.8593C42.4695 51.8354 42.279 50.7761 41.6377 49.9344L40.4814 48.4171L40.4512 48.3782C39.9476 47.7186 39.5269 47.1651 39.2138 46.6806C38.8875 46.1748 38.6272 45.6673 38.5027 45.0872C38.3094 44.1883 38.3911 43.2565 38.7385 42.3993C38.9648 41.844 39.31 41.3843 39.7212 40.9351C40.1136 40.5071 40.6266 40.0261 41.2378 39.4532L41.2755 39.4178L42.047 38.6946L42.0847 38.6592C42.694 38.088 43.2089 37.6052 43.6635 37.2374C44.1426 36.8519 44.635 36.5283 45.2254 36.3179C46.1395 35.9916 47.1335 35.9144 48.0925 36.095C48.7131 36.2117 49.2544 36.4558 49.7939 36.7635C50.3089 37.0553 50.9011 37.4514 51.6047 37.9218L51.6462 37.9501L53.2646 39.0341C54.1625 39.6353 55.2924 39.8139 56.3845 39.6725C57.8989 39.476 59.4349 39.476 60.9493 39.6725C62.0433 39.8139 63.1713 39.6353 64.0692 39.0341L65.6876 37.9501L65.731 37.9218C66.4327 37.4514 67.025 37.0553 67.5399 36.7635C68.0794 36.4558 68.6208 36.2117 69.2395 36.095C70.1991 35.914 71.1937 35.9913 72.1085 36.3179C72.6989 36.5283 73.1912 36.8519 73.6684 37.2374C74.1249 37.6052 74.6399 38.0862 75.2491 38.6592L75.2869 38.6946L76.0602 39.4196L76.0961 39.4532C76.7072 40.0261 77.2203 40.5071 77.6126 40.9351C78.0238 41.3843 78.369 41.844 78.5935 42.3975C78.9415 43.2546 79.0238 44.1864 78.8312 45.0855C78.7067 45.669 78.4464 46.1748 78.12 46.6823C77.8069 47.1651 77.3844 47.7186 76.8826 48.3782L76.8525 48.4171L75.6962 49.9344C75.0548 50.7761 74.8643 51.8354 75.0152 52.8593C75.2248 54.279 75.2248 55.719 75.0152 57.1387C74.8643 58.1644 75.0548 59.2219 75.6962 60.0636L76.8525 61.5809L76.8826 61.6216C77.3863 62.2812 77.8069 62.8347 78.12 63.3175C78.4464 63.8232 78.7067 64.3307 78.8312 64.9108C79.0242 65.8104 78.9418 66.7429 78.5935 67.6005C78.369 68.154 78.0238 68.6155 77.6126 69.0647C77.2203 69.4926 76.7072 69.9736 76.0942 70.5466L76.0583 70.582L75.2869 71.3035L75.2491 71.3388C74.6399 71.9118 74.1249 72.3928 73.6684 72.7606C73.1912 73.1461 72.6989 73.4715 72.1085 73.6802C71.1945 74.007 70.2005 74.0848 69.2414 73.9047C68.6189 73.788 68.0794 73.5422 67.5381 73.2363C67.025 72.9445 66.4327 72.5466 65.731 72.078L65.6876 72.0479L64.0692 70.9657C63.1713 70.3644 62.0415 70.1841 60.9493 70.3255C59.4349 70.522 57.8989 70.522 56.3845 70.3255C55.2905 70.1841 54.1625 70.3644 53.2646 70.9657L51.6462 72.0497L51.6028 72.0762C50.9011 72.5484 50.3089 72.9427 49.7939 73.2363C49.2544 73.5422 48.7131 73.788 48.0944 73.9047C47.1348 74.0857 46.1401 74.0085 45.2254 73.6819C44.635 73.4697 44.1426 73.1461 43.6654 72.7606C43.1203 72.3042 42.5924 71.83 42.0828 71.3388L42.0451 71.3035L41.2755 70.5802L41.2378 70.5466C40.7139 70.0694 40.2081 69.5752 39.7212 69.0647C39.31 68.6155 38.9648 68.154 38.7404 67.6005C38.3924 66.7434 38.31 65.8116 38.5027 64.9125C38.6272 64.3307 38.8875 63.8232 39.2138 63.3175C39.5269 62.8347 39.9495 62.2812 40.4512 61.6198L40.4814 61.5809L41.6377 60.0654V60.0636ZM58.6669 60.3041C60.1677 60.3041 61.6071 59.7452 62.6683 58.7503C63.7295 57.7554 64.3257 56.406 64.3257 54.999C64.3257 53.592 63.7295 52.2426 62.6683 51.2477C61.6071 50.2528 60.1677 49.6939 58.6669 49.6939C57.1661 49.6939 55.7268 50.2528 54.6655 51.2477C53.6043 52.2426 53.0081 53.592 53.0081 54.999C53.0081 56.406 53.6043 57.7554 54.6655 58.7503C55.7268 59.7452 57.1661 60.3041 58.6669 60.3041Z" fill="white" />
                         </svg>
+
                         <h6 className='h7' >
-                            Athlete
+                            High Sschool
                         </h6>
                         <p className='c7 text-primary-100'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
-                        <img src='/assets/arrow.png' className=' z-10 absolute  top-1/2  -translate-y-1/2 right-[-20%] lg:block hidden  ' />
-                        
+                        <img src='/assets/arrow.png' className=' z-10 absolute  top-1/2  -translate-y-1/2 right-[-30%] lg:block hidden  ' />
+
                     </div>
                     <div className='flex flex-col gap-4 bg-primary-300 p-4 rounded-2xl relative '>
                         <svg width="118" height="110" viewBox="0 0 118 110" fill="none" className='border rounded-xl' xmlns="http://www.w3.org/2000/svg">
@@ -98,17 +94,34 @@ const Working = () => {
                         </svg>
 
                         <h6 className='h7' >
-                            Coach
+                            College
+                        </h6>
+                        <p className='c7 text-primary-100'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        </p>
+                        <img src='/assets/arrow.png' className=' z-10 absolute  top-1/2  -translate-y-1/2 right-[-30%] scale-y-[-1] lg:block hidden  ' />
+                    </div>
+                    <div className='flex flex-col gap-4 bg-primary-300 p-4 rounded-2xl relative '>
+
+                        <svg width="118" height="110" viewBox="0 0 118 110" fill="none" className='border rounded-xl ' xmlns="http://www.w3.org/2000/svg">
+                            <rect width="117.333" height="110" rx="20" fill="#151515" />
+                            <path d="M63.1665 43.75C66.2731 43.75 68.7915 41.2316 68.7915 38.125C68.7915 35.0184 66.2731 32.5 63.1665 32.5C60.0599 32.5 57.5415 35.0184 57.5415 38.125C57.5415 41.2316 60.0599 43.75 63.1665 43.75Z" fill="white" />
+                            <path d="M64.2919 58.7125L53.9419 54.1C52.8169 53.5375 52.2544 55.225 51.6919 56.35C51.1294 57.475 47.0794 64.45 47.4169 65.6875C47.7544 66.7 48.6544 67.2625 49.5544 67.2625C49.7794 67.2625 50.0044 67.2625 50.2294 67.15L64.0669 62.875C64.9669 62.65 65.6419 61.75 65.6419 60.85C65.6419 59.95 65.0794 59.05 64.2919 58.7125Z" fill="white" />
+                            <path d="M61.8161 45.0996L59.3411 43.9746C57.8786 43.2996 56.0786 43.9746 55.4036 45.4371L42.0161 74.2371C41.4536 75.3621 42.0161 76.7121 43.1411 77.2746C43.4786 77.3871 43.8161 77.4996 44.1536 77.4996C45.0536 77.4996 45.8411 77.0496 46.1786 76.2621C46.1786 76.2621 56.9786 61.2996 57.8786 59.4996C58.7786 57.6996 63.3911 49.0371 63.3911 49.0371C63.9536 47.5746 63.3911 45.7746 61.8161 45.0996Z" fill="white" />
+                            <path d="M77.229 45.6625C76.4415 44.7625 74.979 44.5375 74.079 45.325L68.454 50.05L61.254 46.1125C60.0165 45.4375 58.329 45.6625 57.5415 47.125C56.6415 48.5875 57.0915 50.3875 58.4415 50.95L67.779 54.775C68.1165 54.8875 68.454 55 68.7915 55C69.354 55 69.804 54.775 70.254 54.4375L77.004 48.8125C77.904 48.025 78.0165 46.675 77.229 45.6625ZM44.829 53.9875L48.654 48.25L53.829 48.925L55.5165 45.4375C55.9665 44.425 56.8665 43.8625 57.879 43.75H47.529C46.7415 43.75 46.0665 44.0875 45.6165 44.7625L41.1165 51.5125C40.4415 52.525 40.6665 53.9875 41.7915 54.6625C42.0165 54.8875 42.4665 55 42.9165 55C43.5915 55 44.379 54.6625 44.829 53.9875Z" fill="white" />
+                        </svg>
+                        <h6 className='h7' >
+                            Athelte
                         </h6>
                         <p className='c7 text-primary-100'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         </p>
                         {/* <img src='/assets/arrow.png' className=' z-10 absolute  top-1/2  -translate-y-1/2 right-[-30%] scale-y-[-1] lg:block hidden  ' /> */}
                     </div>
-                   
+
 
                 </div>
-              
+
             </section>
 
             <section className='bg-primary-300 px-2'>
@@ -128,7 +141,7 @@ const Features = () => {
                     <div className='grid grid-cols-10    ' >
                         <div className='md:col-span-6  col-span-full  flex flex-col gap-4 justify-center order-2  md:order-1 '>
                             <p className='b6 text-primary-100 mt-4 md:mt-0' >Features</p>
-                            <h1 className='h1'>Coaches feature heading</h1>
+                            <h1 className='h1'>Coaches Feature Heading</h1>
                             <p className='text-primary-100'> Swag actually photo bun actually food seitan party vexillologist. Hashtag selfies poke vape flannel chicken mukbang. A listicle plant listicle tbh letterpress chia air bicycle. Food affogato iceland boys crucifix 8-bit vibecession waistcoat. Them pabst letterpress tousled chillwave. Skateboard palo sus sustainable yr microdosing a pin twee aesthetic. It green shoreditch gastropub beer portland book bread lo-fi lumbersexual. Af narwhal batch jianbing williamsburg. Glossier adaptogen vhs 90's same pork. V.</p>
 
                             <Link className='btn-link max-w-fit' to={'/login'} >
@@ -141,15 +154,15 @@ const Features = () => {
                     </div>
                 </div>
             </section>
-            <section className='bg-black p-4 lg:p-0 '>
-                <div className='max-w-8xl mx-auto   '>
+            <section className='bg-black p-4 lg:p-0'>
+                <div className='max-w-8xl mx-auto'>
                     <div className='grid grid-cols-10    ' >
                         <div className='md:col-span-4 col-span-full flex flex-col md:items-start  w-2/3 mx-auto md:w-full ' >
                             <img src='/assets/feature1.png' />
                         </div>
                         <div className='flex flex-col gap-4 justify-center md:col-span-6  col-span-full'>
                             <p className='b6 text-primary-100 mt-4 md:mt-0' >Features</p>
-                            <h1 className='h1'>Athlete feature heading</h1>
+                            <h1 className='h1'>Athlete Feature Heading</h1>
                             <p className='text-primary-100'> Swag actually photo bun actually food seitan party vexillologist. Hashtag selfies poke vape flannel chicken mukbang. A listicle plant listicle tbh letterpress chia air bicycle. Food affogato iceland boys crucifix 8-bit vibecession waistcoat. Them pabst letterpress tousled chillwave. Skateboard palo sus sustainable yr microdosing a pin twee aesthetic. It green shoreditch gastropub beer portland book bread lo-fi lumbersexual. Af narwhal batch jianbing williamsburg. Glossier adaptogen vhs 90's same pork. V.</p>
                             <Link className='btn-link max-w-fit' to={'/login'} >
                                 Get Started

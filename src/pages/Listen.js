@@ -29,9 +29,9 @@ const Hero = () => {
                 <h1 className="h1 font-light text-center">
                     Listen to our conversation with Atheletes,<br/> Coaches and Parents
                 </h1>
-                <p className="text-center text-primary-150 c5">
+                {/* <p className="text-center text-primary-150 c5">
                     Elevate your skills with expert advice and step-by-step guides tailored for athletes at every level. From training drills to mental strategies, these videos are your ultimate playbook to success.
-                </p>
+                </p> */}
                 <div className='max-w-3xl w-full'>
                     <Input Icon={IoSearch} placeholder='Search for your favorite athlete, coach or Topic' className='bg-primary-200 w-full' />
                 </div>

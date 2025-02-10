@@ -8,9 +8,17 @@ const AboutUs = () => {
     return (
         <div className='flex flex-col gap-y-[100px]' >
             {/* <Hero /> */}
-            <Founder />
             <OurMission />
+            <Founder />
             {/* <PlayStoreCta /> */}
+            <section className='bg-primary-300 px-2 sm:px-0'>
+                <div className=' md:p-[80px] max-w-8xl  mx-auto'>
+                    <h2 className='h2 text-left '>
+                        We are a nationwide sports movement, poised to revolutionize the landscape of college sports as a whole. At our core, we are driven by a passion for empowering Student Athletes to claim autonomy over their careers by breaking down systems and institutions that inhibit their right to capitalize on their abilities and make their own decisions and reshaping the way they navigate their collegiate careers.
+                        POWER TO THE PLAYERS!
+                    </h2>
+                </div>
+            </section>
 
         </div>
     )
@@ -21,7 +29,7 @@ export default AboutUs
 const Hero = () => {
     return (
 
-        <section className='bg-black max-w-7xl rounded-xl  flex md:flex-row flex-col  mx-auto p-8 mt-[50px] '>
+        <section className='bg-black max-w-7xl rounded-xl  flex md:flex-row flex-col  mx-auto p-8 mt-[50px]  '>
             <div className='flex flex-col gap-10 justify-center w-full order-2 md:order-1  '>
                 <h1 className='h3 md:text-left '>Welcome to PORTALIZED: Empowering Student-Athletes in the Transfer Portal</h1>
                 <p className='c5 text-primary-100' >At PORTALIZED, we recognize the critical role of the transfer portal in shaping the futures of student-athletes. Our app is designed as the ultimate platform for players to easily and efficiently announce their entry into the transfer portal, all while respecting established processes and guidelines.</p>
@@ -56,19 +64,12 @@ const OurMission = () => {
                 <p className='c3 text-primary-100 mt-10' >We are committed to promoting transparency and integrity in collegiate athletics. PORTALIZED not only empowers student-athletes by giving them a voice in their athletic journey but also serves as the ultimate tool for colleges to monitor the portal year-round.</p>
 
             </section> */}
-                <section className='max-w-7xl mx-auto text-center px-2 sm:px-0'>
-                    <h2 className='h2'>Our Mission</h2>
-                    <p className='c3 text-primary-100' >Our mission is to simplify the transfer process for everyone involved, fostering an environment where student-athletes can make informed decisions and institutions can stay connected.</p>
-                    <p className='c3 text-primary-100 mt-6' >Join us at PORTALIZED as we transform the transfer landscape—supporting the success and well-being of student-athletes everywhere while upholding the values of collegiate sports.</p>
-                </section>
-                <section className='bg-primary-300 px-2 sm:px-0'>
-                    <div className=' md:p-[80px] max-w-8xl  mx-auto'>
-                        <h2 className='h2 text-left '>
-                            We are a nationwide sports movement, poised to revolutionize the landscape of college sports as a whole. At our core, we are driven by a passion for empowering Student Athletes to claim autonomy over their careers by breaking down systems and institutions that inhibit their right to capitalize on their abilities and make their own decisions and reshaping the way they navigate their collegiate careers.
-                            POWER TO THE PLAYERS!
-                        </h2>
-                    </div>
-                </section>
+            <section className='max-w-7xl mx-auto text-center px-2 sm:px-0 h-[50vh] flex flex-col justify-center items-center bg-portalized bg-no-repeat bg-top  '>
+                <h2 className='top-heading'>Our Mission</h2>
+                <p className='c3 text-primary-100' >Our mission is to simplify the transfer process for everyone involved, fostering an environment where student-athletes can make informed decisions and institutions can stay connected.</p>
+                <p className='c3 text-primary-100 mt-6' >Join us at PORTALIZED as we transform the transfer landscape—supporting the success and well-being of student-athletes everywhere while upholding the values of collegiate sports.</p>
+            </section>
+
 
         </>
     )
@@ -122,7 +123,7 @@ const PlayStoreCta = () => {
                             Love our Application? Download Now
                         </h1> */}
                         <h1 className='top-heading font-light'>
-                             Download Now
+                            Download Now
                         </h1>
                         <p className='c6'>Portalized provides a safe platform for Coaches and Athletes.</p>
                         <div className='flex flex-col gap-10'>

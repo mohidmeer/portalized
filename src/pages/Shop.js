@@ -28,9 +28,9 @@ const Hero = () => {
         <h1 className="h3 font-light text-center">
           Shop Our Exclusive Portalized Merchandise
         </h1>
-        <p className="text-center text-primary-150 c5">
+        {/* <p className="text-center text-primary-150 c5">
           Create your college account, add coaches, and unlock opportunities to connect with talented athletes. Empower sponsorships and build lasting success together.
-        </p>
+        </p> */}
         <div className='max-w-3xl w-full'>
           <Input Icon={IoSearch} placeholder='Search for your favorite athlete, coach or Topic' className='bg-primary-200 w-full' />
         </div>

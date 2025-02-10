@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 
-body { @apply bg-[#090909] text-white  font-sans  }
+body { @apply bg-[#090909] text-white  font-sans   }
 
 
 

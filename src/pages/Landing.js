@@ -35,9 +35,9 @@ const Hero = () => {
                 <h1 className="top-heading font-light text-center">
                         Your Journey, Your Platform, Your Future
                 </h1>
-                <p className="text-center text-primary-150 c5">
+                {/* <p className="text-center text-primary-150 c5">
                     Create your college account, add coaches, and unlock opportunities to connect with talented athletes. Empower sponsorships and build lasting success together.
-                </p>
+                </p> */}
                 <Link to={'/login'} className="btn-link !max-w-fit !rounded-full !px-10">
                     Let’s Get Started 
                 </Link>
@@ -116,7 +116,7 @@ const VideoPlayer = () => {
                 <video
                     ref={videoRef}
                     className="w-full rounded-lg"
-                    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                    src="/assets/portlizedvideo.mp4"
                     onTimeUpdate={handleProgress}
                     controls={false}
                 >
@@ -233,7 +233,6 @@ const Merchandise = () => {
         </section>
     );
 }
-
 const Trending = () => {
     const podcasts = [
         { id: 1, name: 'Do’s & Don’ts of Basketball', description: 'Chartreuse hexagon aesthetic jianbing offal craft artisan. Man goth truffaut tousled cardigan. Bodega subway.', owner: 'Khaleesi North' },
@@ -262,9 +261,6 @@ const Trending = () => {
         </section>
     );
 }
-
-
-
 const Vision = () => {
 
     return (
