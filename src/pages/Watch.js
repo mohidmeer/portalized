@@ -27,8 +27,7 @@ const Hero = () => {
             className="flex flex-col min-h-[50vh]  justify-center items-center  bg-portalized bg-no-repeat bg-top bg-[length:700px] p-2  md:p-0  ">
             <div className="max-w-6xl mx-auto flex flex-col gap-6 items-center justify-center">
                 <h1 className="top-heading font-light text-center">
-                Coming soon on YouTube<br/>
-                   
+                 Coming soon on YouTube<br/>
                 </h1>
                 <p className="text-center text-primary-150 c5">
                     Elevate your skills with expert advice and step-by-step guides tailored for athletes at every level. From training drills to mental strategies, these videos are your ultimate playbook to success.
@@ -47,7 +46,7 @@ const FeaturedVideo = () => {
         <section className=" bg-primary-300 p-1 sm:p-8 ">
             <div className="relative max-w-7xl mx-auto w-full h-[50vh]  md:h-[70vh] rounded-xl overflow-hidden ">
                 <iframe
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    src="https://youtu.be/HWx53vm4SZA"
                     title="Featured Video"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
