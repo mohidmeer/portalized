@@ -116,7 +116,7 @@ const VideoPlayer = () => {
                 <video
                     ref={videoRef}
                     className="w-full rounded-lg"
-                    src="/assets/portlizedvideo.mp4"
+                    src="/assets/port.mp4"
                     onTimeUpdate={handleProgress}
                     controls={false}
                 >

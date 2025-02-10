@@ -46,7 +46,7 @@ const FeaturedVideo = () => {
         <section className=" bg-primary-300 p-1 sm:p-8 ">
             <div className="relative max-w-7xl mx-auto w-full h-[50vh]  md:h-[70vh] rounded-xl overflow-hidden ">
                 <iframe
-                    src="https://youtu.be/HWx53vm4SZA"
+                    src="https://youtu.be/G_HqOUsBOh8"
                     title="Featured Video"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
