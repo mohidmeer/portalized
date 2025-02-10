@@ -27,10 +27,10 @@ const Hero = () => {
                 className="flex flex-col min-h-[50vh]  justify-center items-center  bg-portalized bg-no-repeat bg-top bg-[length:700px]  ">
                 <div className="max-w-6xl mx-auto flex flex-col gap-6 items-center justify-center">
                     <h1 className="top-heading font-light text-center">
-                        Are you ready to take control of your athletic journey
+                    Are You Prepared To Seize The Reins Of Your Athletic Journey?
                     </h1>
                     {/* <p className="text-center text-primary-150 c5">
-                        Start your journey without any hustle, documentation. Register yourself and get started with the new beginning.
+                        Are You Prepared To Seize The Reins Of Your Athletic Journey?
                     </p> */}
                     <Link to={'/login'} className="btn-link !max-w-fit !rounded-full !px-10">
                         Enter the Portal
