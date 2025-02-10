@@ -39,8 +39,8 @@ const Hero = () => {
             </section>
             <section className="flex flex-col   justify-center items-center h-[20vh] sm:h-[40vh]  ">
                 <div className='relative'>
-                    <img src="/assets/portalized.svg" alt="Example SVG" className="mt-10 h-[100px] px-4  sm:px-0" />
-                    <img src="/assets/iphone.png" alt="Example SVG" className="absolute top-0 translate-y-[-25%] sm:translate-y-[-45%] mx-auto" />
+                    <img src="/assets/portalized.svg"  className="mt-10 h-[100px] px-4  sm:px-0" />
+                    <img src="/assets/iphone.png"  className="absolute top-0 translate-y-[-25%] sm:translate-y-[-45%] mx-auto" />
                 </div>
             </section>
         </>
@@ -52,12 +52,10 @@ const Hero2 = () => {
             <div className="relative">
                 <img
                     src="/assets/portalized.svg"
-                    alt="Example SVG"
                     className="mt-10 h-[100px]"
                 />
                 <img
-                    src="/assets/iphone3.png"
-                    alt="iPhone Black"
+                    src="/assets/somerando.png"
                     className="absolute inset-0 mx-auto top-1/2 transform -translate-y-1/2 w-1/2 lg:max-w-fit "
                 />
             </div>
