@@ -37,9 +37,6 @@ const Hero = () => {
                     <h1 className="top-heading font-light text-center">
                         Are You Prepared To Seize The Reins Of Your Athletic Journey?
                     </h1>
-                    {/* <p className="text-center text-primary-150 c5">
-                        Are You Prepared To Seize The Reins Of Your Athletic Journey?
-                    </p> */}
                     <Link to={'/login'} className="btn-link !max-w-fit !rounded-full !px-10">
                         Enter the Portal
                     </Link>
@@ -48,7 +45,7 @@ const Hero = () => {
             <section className="flex flex-col   justify-center items-center h-[20vh] sm:h-[40vh]  ">
                 <div className='relative'>
                     <img src="/assets/portalized.svg" className="mt-10 h-[100px] px-4  sm:px-0" />
-                    <img src="/assets/iphone.png" className="absolute top-0 translate-y-[-25%] sm:translate-y-[-45%] mx-auto" />
+                    <img src="/assets/images/rando.png" className="absolute top-0 translate-y-[-25%] sm:translate-y-[-45%] mx-auto" />
                 </div>
             </section>
         </>
