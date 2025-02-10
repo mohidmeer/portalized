@@ -30,7 +30,7 @@ export default Landing
 const Hero = () => {
     return (
         <section
-            className="flex flex-col min-h-[80vh]  justify-center items-center  bg-portalized bg-no-repeat bg-top bg-[length:700px]  ">
+            className="flex flex-col min-h-[60vh]  justify-center items-center  bg-portalized bg-no-repeat bg-top bg-[length:700px]  ">
             <div className="max-w-6xl mx-auto flex flex-col gap-6 items-center justify-center">
                 <h1 className="top-heading font-light text-center">
                         Your Journey, Your Platform, Your Future
@@ -189,10 +189,10 @@ const Cta = () => {
         <section className=' md:h-[60vh] max-w-8xl mx-auto px-6 md:px-[80px] ' >
             <div className='grid grid-cols-1 md:grid-cols-2 w-full h-full '>
                 <div className='h-full   flex flex-col gap-4   justify-center ' >
-                    <h1 className='h1'>Portalized is here to bridge the gap between College, Athlete and Coaches.</h1>
-                    <p className='b6'>Whether you're part of a college or not, there is an opportunity waiting for you through Portalized.</p>
+                    <h1 className='h1'>Portalized is Redefining the Game, uniting Atheletes and Coaches for unprecedented Success!</h1>
+                    {/* <p className='b6'>Whether you're part of a college or not, there is an opportunity waiting for you through Portalized.</p> */}
                     <Link to={'/sign-up'} className="btn-link !max-w-fit !rounded-full !px-10">
-                        Register Now
+                        Let's Get Started
                     </Link>
 
                 </div>
