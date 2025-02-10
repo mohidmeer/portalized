@@ -8,12 +8,20 @@ const MobileApp = () => {
         <div className='flex flex-col gap-y-[100px]' >
             <Hero />
             <Working />
-            <Hero2 />
+            <section className="flex flex-col justify-center items-center h-[30vh] sm:h-[60vh]">
+                <div className="relative">
+                    <img
+                        src="/assets/portalized.svg"
+                        className="mt-10 h-[100px]"
+                    />
+                    <img
+                        src="/assets/somerando.png"
+                        className="absolute inset-0 mx-auto top-1/2 transform -translate-y-1/2 w-1/2 lg:max-w-fit "
+                    />
+                </div>
+            </section>
             <Features />
-            {/* <Testimonials /> */}
             <Download />
-
-
         </div>
     )
 }
@@ -27,7 +35,7 @@ const Hero = () => {
                 className="flex flex-col min-h-[50vh]  justify-center items-center  bg-portalized bg-no-repeat bg-top bg-[length:700px]  ">
                 <div className="max-w-6xl mx-auto flex flex-col gap-6 items-center justify-center">
                     <h1 className="top-heading font-light text-center">
-                    Are You Prepared To Seize The Reins Of Your Athletic Journey?
+                        Are You Prepared To Seize The Reins Of Your Athletic Journey?
                     </h1>
                     {/* <p className="text-center text-primary-150 c5">
                         Are You Prepared To Seize The Reins Of Your Athletic Journey?
@@ -39,27 +47,11 @@ const Hero = () => {
             </section>
             <section className="flex flex-col   justify-center items-center h-[20vh] sm:h-[40vh]  ">
                 <div className='relative'>
-                    <img src="/assets/portalized.svg"  className="mt-10 h-[100px] px-4  sm:px-0" />
-                    <img src="/assets/iphone.png"  className="absolute top-0 translate-y-[-25%] sm:translate-y-[-45%] mx-auto" />
+                    <img src="/assets/portalized.svg" className="mt-10 h-[100px] px-4  sm:px-0" />
+                    <img src="/assets/iphone.png" className="absolute top-0 translate-y-[-25%] sm:translate-y-[-45%] mx-auto" />
                 </div>
             </section>
         </>
-    )
-}
-const Hero2 = () => {
-    return (
-        <section className="flex flex-col justify-center items-center h-[30vh] sm:h-[60vh]">
-            <div className="relative">
-                <img
-                    src="/assets/portalized.svg"
-                    className="mt-10 h-[100px]"
-                />
-                <img
-                    src="/assets/somerando.png"
-                    className="absolute inset-0 mx-auto top-1/2 transform -translate-y-1/2 w-1/2 lg:max-w-fit "
-                />
-            </div>
-        </section>
     )
 }
 
@@ -172,8 +164,6 @@ const Features = () => {
         </>
     )
 }
-
-
 const Testimonials = () => {
 
 
